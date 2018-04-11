@@ -202,5 +202,5 @@ gaps inner 10
 gaps outer 6
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec compton -f -c -D 5 -i 0.70 -r 15
+exec compton --config $HOME/.config/compton/compton.conf
 
