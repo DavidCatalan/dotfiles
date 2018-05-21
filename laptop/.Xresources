@@ -1,0 +1,68 @@
+! Hisoka colors
+
+! special
+*.foreground:   #fbeada
+*.background:   #201f3e
+*.cursorColor:  #fbeada
+
+! black
+*.color0:       #201f3e
+*.color8:       #2e2d5b
+
+! red
+*.color1:       #fd361f
+*.color9:       #ff666b
+
+! green
+*.color2:       #3fad47
+*.color10:      #67ae69
+
+! yellow
+*.color3:       #fbda1d
+*.color11:      #fbda1d
+
+! blue
+*.color4:       #1c17b9
+*.color12:      #5a5ec8
+
+! magenta
+*.color5:       #751da8
+*.color13:      #825ea8
+
+! cyan
+*.color6:       #67ae9c
+*.color14:      #768e88
+
+! white
+*.color7:       #dfc8fe
+*.color15:      #dfc8fe
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (mouse or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+!scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt*secondaryScreen: 1
+URxvt*secondaryScroll: 0
+
+!No scrollbar
+URxvt.scrollBar: false
+
+!FONTS
+URxvt.font: xft:DejaVu Sans Mono:size=11
+URxvt.letterSpace: -1
+
+!Extensions
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+
+URxvt.matcher.rend.0: Uline Bold fg5
+
